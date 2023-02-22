@@ -1,0 +1,36 @@
+<?php
+// Start session
+session_start();
+
+// Connect to database
+$servername = "http://sql12.freesqldatabase.com/";
+$username = "sql12600175";
+$password = "Sc8hTaEf6q";
+$dbname = "sql12600175";
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+// Get user input
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+// Validate user credentials
+$sql = "SELECT * FROM users WHERE email = '$email'";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+if (password_verify($password, $row['hashed_password'])) {
+// Set session variable
+$_SESSION['user_id'] = $row['id'];
+// Redirect to homepage or another authorized page
+header('Location: homepage.php');
+} else {
+// Display error message
+echo "Invalid email or password";
+}
+
+mysqli_close($conn);
+?>
