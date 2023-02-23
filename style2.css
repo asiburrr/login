@@ -1,0 +1,109 @@
+/* Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+section {
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+h1, h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+/* Hero styles */
+
+#hero {
+  background-color: #f7f7f7;
+  padding: 50px;
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Work styles */
+
+#work {
+  padding: 50px;
+}
+
+#work h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#work li {
+  margin-bottom: 30px;
+}
+
+#work h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#work p {
+  margin-bottom: 20px;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
