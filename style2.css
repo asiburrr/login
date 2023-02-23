@@ -58,7 +58,44 @@ ul {
   list-style: disc;
   margin-left: 2rem;
 }
-/* Hero styles */
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Specific styles for the about page */
 
 #hero {
   background-color: #f7f7f7;
@@ -71,39 +108,141 @@ ul {
   margin-bottom: 20px;
 }
 
-/* Work styles */
 
-#work {
-  padding: 50px;
+#about {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#work h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+#about h2:first-child {
+  margin-top: 0;
 }
 
-#work li {
-  margin-bottom: 30px;
+#contact {
+  background-color: #eee;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#work h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
+#contact label,
+#contact button {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
-#work p {
-  margin-bottom: 20px;
+#contact textarea {
+  height: 150px;
 }
 
-/* Footer styles */
+/* Global styles */
 
-footer {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+section {
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+h1, h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.box {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.box h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.box p {
+  font-size: 1rem;
   text-align: center;
 }
 
-footer p {
-  margin: 0;
+.col-4 {
+  flex-basis: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-8 {
+  flex-basis: 66.67%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
