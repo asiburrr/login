@@ -3,56 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | My Website</title>
-  <link rel="stylesheet" href="style.css">
+  <title>About</title>
+  <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-
+<header>
   <nav>
+        <h4>VARAMINI</h4>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="daily-work.html">Daily Work</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
   </nav>
+</header>
 
-  <section id="hero">
-    <h1>About Me</h1>
-  </section>
+<!-- Hero section -->
+<section id="hero">
+  <div class="container">
+    <h1>About</h1>
+  </div>
+</section>
 
-  <section id="about">
-    <h2>My Story</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod quis mi vitae interdum. In sed ligula sem. Aliquam erat volutpat. Suspendisse aliquet elit nisl, vel mollis lectus tempus et. Fusce sollicitudin, velit non vestibulum suscipit, tortor libero suscipit enim, nec sagittis libero magna ut sapien. Duis a aliquet tortor. Vestibulum rutrum nulla eget erat lobortis, eu elementum odio convallis. Proin ornare justo vel urna aliquam blandit. Suspendisse vitae augue ac metus bibendum aliquam sed a dolor. Curabitur eget volutpat tellus, sed maximus massa.</p>
+<!-- Box profile section -->
+<section id="box-profile">
+<div class="box">
+  <div class="row">
+    <div class="col-4">
+      <img src="asi.jpeg" alt="Profile 1">
+    </div>
+    <div class="col-8">
+      <h2>Asibur Rahman Aravi</h2>
+      <p>Software Engineer</p>
+      <p>Email: asiburarave@gmail.com</p>
+      <p>Phone: 01927573409</p>
+      <p>Address: Mymensingh,Dhaka,Bangladesh </p>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-4">
+      <img src="" alt="Profile 2">
+    </div>
+    <div class="col-8">
+      <h2>Name 2</h2>
+      <p>Job Title 2</p>
+      <p>Email: email2@example.com</p>
+      <p>Phone: 123-456-7890</p>
+      <p>Address: 123 Main St, Anytown, USA</p>
+    </div>
+  </div>
+</div>
 
-    <h2>My Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>PHP</li>
-      <li>MySQL</li>
-    </ul>
-  </section>
+</section>
 
-  <section id="contact">
+<!-- Contact form section -->
+<section id="contact">
+  <div class="container">
     <h2>Contact Me</h2>
-    <form action="#" method="post" netlify>
-      <label for="name">Name:</label>
+    <form>
+      <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
-
-      <label for="email">Email:</label>
+      
+      <label for="email">Email</label>
       <input type="email" id="email" name="email" required>
-
-      <label for="message">Message:</label>
+      
+      <label for="message">Message</label>
       <textarea id="message" name="message" required></textarea>
-
-      <button type="submit">Submit</button>
+      
+      <button type="submit">Send Message</button>
     </form>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2023 My Website. All rights reserved.</p>
-  </footer>
+<!-- Footer section -->
+<footer>
+  <div class="container">
+    <p>&copy; 2023 Varamini. All rights reserved</p>
+  </div>
+</footer>
 
 </body>
 </html>
