@@ -8,10 +8,11 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-color: yellow;
 }
 
 nav {
-  background-color: #333;
+  background-color: blue;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -58,57 +59,53 @@ ul {
   list-style: disc;
   margin-left: 2rem;
 }
-/* Home page styles */
+/* Hero styles */
 
-#hero {
-  background-image: url('ui.jpeg');
-  background-size: cover;
-  height: 500px;
-  position: relative;
+
+
+#hh {
+  font-size: 36px;
+  margin-bottom: 36;
+  justify-items: center;
+  color: white;
+  background-color: blue;
+  padding-bottom: 5px;
 }
 
-#hero h1 {
-  color: #fff;
-  font-size: 72px;
-  font-weight: bold;
-  left: 50%;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  transform: translate(-50%, -50%);
+/* Work styles */
+
+#work {
+  padding: 50px;
+  
 }
 
-#services {
-  background-color:#f7f7f7;
-padding: 50px;
+#work h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
-.service {
-margin-bottom: 30px;
+#work li {
+  margin-bottom: 30px;
 }
 
-.service h3 {
-margin-bottom: 10px;
+#work h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#work p {
+  margin-bottom: 20px;
 }
 
 /* Footer styles */
 
 footer {
-background-color: #333;
-color: #fff;
-padding: 20px;
-text-align: center;
+  background-color: blue;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
 }
 
 footer p {
-margin: 0;
-}
-
-footer a {
-color: #fff;
-text-decoration: none;
-}
-
-footer a:hover {
-text-decoration: underline;
+  margin: 0;
 }
