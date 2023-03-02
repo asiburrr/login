@@ -1,0 +1,216 @@
+/* Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: yellow;
+}
+
+nav {
+  background-color: blue;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+section {
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+h1, h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+
+}
+
+
+footer {
+  background-color: blue;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Specific styles for the about page */
+
+#hero {
+  background-color: #f7f7f7;
+  padding: 50px;
+  text-align: center;
+}
+
+#hhhh {
+  font-size: 20px;
+  margin-bottom: 36;
+  justify-items: center;
+  color: white;
+  background-color: blue;
+  padding-bottom: 5px;
+}
+
+
+
+#about {
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#about h2:first-child {
+  margin-top: 0;
+}
+
+/* Global styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+  margin-bottom: 2rem;
+}
+.box {
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  background-color: blue;
+  border: 5px solid white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.box:hover {
+  box-shadow: 0 10px 20px #007bff;
+}
+.box img {
+  border: 3px solid white;
+  box-shadow: 3px ;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+.box h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.box p {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.col-4 {
+  flex-basis: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-8 {
+  flex-basis: 66.67%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 50%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+form {
+  display: flex;
+  background: blue;
+  padding: 10%;
+  border: 5px solid white;
+  border-radius: 10px ;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0 auto ;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 5px #ddd;
+  width: 100%;
+  max-width: 0 auto;
+}
+
+textarea {
+  height: 150px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: yellow;
+  color: blue;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button[type="submit"]:hover {
+  background-color: greenyellow;
+  color: black; 
+}
